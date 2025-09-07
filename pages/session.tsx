@@ -27,7 +27,7 @@ function SessionPage() {
     try {
       const initialPerformance = {
         user_id: userId,
-        current_difficulty: 'easy',
+        current_difficulty: 'easy' as const,
         response_time_ms: 0,
         hints_used: 0,
         correct: true,
