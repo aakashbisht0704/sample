@@ -1,6 +1,6 @@
 import type { Activity, UserPerformance } from './types';
 
-const ML_SERVICE_URL = process.env.NEXT_PUBLIC_ML_SERVICE_URL || 'http://localhost:8000';
+const ML_SERVICE_URL = process.env.NEXT_PUBLIC_ML_SERVICE_URL || '10.84.2.79:0';
 
 export async function getNextQuestion(performance: UserPerformance): Promise<{
   question: Activity;
